@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0;
+  grid-auto-flow: row;
+      grid-template-areas: "head head head head" "clearAll brackets percentage divide" "seven eight nine multiplyAll" "four five six minus" "one two three plus" "plus-minus zeroZero dotDot equals";
+}
+
+.container .head {
+  width: 400px;
+  height: 130px;
+  border-radius: 0;
+  margin: 0;
+}
+
+.container .button {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.container .head {
+  width: 400px;
+  height: 130px;
+  border-radius: 0;
+  margin: 0;
+}
+
+.head {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: head;
+}
+
+.brackets {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: brackets;
+}
+
+.percentage {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: percentage;
+}
+
+.divide {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: divide;
+}
+
+.seven {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+.eight {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+.nine {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+.four {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+.five {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.six {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+.one {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.two {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.three {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.plus-minus {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: plus-minus;
+}
+
+.zero {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: zeroZero;
+}
+
+.dot {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: dotDot;
+}
+
+.equals {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: equals;
+}
+
+.plus {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: plus;
+}
+
+.minus {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: minus;
+}
+
+.multiply {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: multiplyAll;
+}
+
+.clear {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: clearAll;
+}
+/*# sourceMappingURL=style.css.map */
