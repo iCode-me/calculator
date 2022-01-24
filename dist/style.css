@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0;
+  grid-auto-flow: row;
+  grid-template-areas: "head head head head" "clearAll brackets percentage divide" "seven eight nine multiplyAll" "four five six minus" "one two three plus" "plus-minus zeroZero dotDot equals";
+}
+.container .head {
+  width: 400px;
+  height: 130px;
+  border-radius: 0;
+  margin: 0;
+}
+.container .button {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.container .head {
+  width: 400px;
+  height: 130px;
+  border-radius: 0;
+  margin: 0;
+}
+
+.head {
+  grid-area: head;
+}
+
+.brackets {
+  grid-area: brackets;
+}
+
+.percentage {
+  grid-area: percentage;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.plus-minus {
+  grid-area: plus-minus;
+}
+
+.zero {
+  grid-area: zeroZero;
+}
+
+.dot {
+  grid-area: dotDot;
+}
+
+.equals {
+  grid-area: equals;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.multiply {
+  grid-area: multiplyAll;
+}
+
+.clear {
+  grid-area: clearAll;
+}
