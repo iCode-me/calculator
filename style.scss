@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  color:rgb(255, 255, 255);
 }
 
 .container {
+  margin: 0 auto;
   background-color: black;
-  border: 1px solid black;
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -16,35 +18,53 @@
   grid-template-areas:
     "head head head head"
     "clearAll brackets percentage divide"
-    "seven eight nine multiplyAll"
+    "seven eight nine multiplyy"
     "four five six minus"
     "one two three plus"
-    "plus-minus zeroZero dotDot equals";
+    "plusMinus zeroZero dotDot equals";
+
 
   .head {
-      top: 0;
-      left: 0;
-      width: 400px;
-      height: 130px;
-      border-radius: 0;
-      margin: 0;
+    width: 100%;
+    height: 130px;
+    border-radius: 0;
+    margin: 0;
+    background-color: rgb(40, 40, 40);
+    text-align: right;
+    padding-top: 90px;
+    font-size: 35px;
   }
+
   .button {
-    background-color: gray;
+    background-color: rgb(142, 141, 141);
     border: 1px solid black;
     border-radius: 30px;
     width: 50px;
     height: 50px;
-    margin: 20px;
+    margin: 0 auto;
+    padding-top: 8px;
+    margin-top: 10px;
     text-align: center;
     font-size: 25px;
+    justify-self: center;
+    vertical-align: middle;
   }
 
-  .head {
-    width: 400px;
-    height: 130px;
-    border-radius: 0;
-    margin: 0;
+  .num {
+    color: rgb(255, 255, 255);
+  }
+  .operator {
+    color: #E2CE14;
+  }
+  .dotDot {
+    color:rgb(255, 255, 255);
+  }
+  .clearAll {
+    color: #de4200;
+  }
+  .equals {
+    background-color: #E2CE14;
+    color:rgb(255, 255, 255);
   }
 
 }
@@ -75,7 +95,7 @@
 
 .three { grid-area: three; }
 
-.plus-minus { grid-area: plus-minus; }
+.plusMinus { grid-area: plusMinus; }
 
 .zero { grid-area: zeroZero; }
 
@@ -87,6 +107,6 @@
 
 .minus { grid-area: minus; }
 
-.multiply { grid-area: multiplyAll; }
+.multiplyy { grid-area: multiplyy; }
 
 .clear { grid-area: clearAll; }
