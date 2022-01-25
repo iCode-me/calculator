@@ -17,9 +17,9 @@
 // const buttonDivide = document.querySelector(".devide");
 // const buttonPercentage = document.querySelector(".percentage");
 // const buttonBrackets = document.querySelector(".brackets");
-var buttonClear = document.querySelector(".clearAll"); // const buttonPlusMinus = document.querySelector(".plusMinus")
-
+// const buttonPlusMinus = document.querySelector(".plusMinus")
 var calcArr = [];
+var buttonClear = document.querySelector(".clearAll");
 var head = document.querySelector(".head");
 var equals = document.querySelector(".equals");
 var number = document.querySelectorAll(".num");

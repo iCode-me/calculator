@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  background-color: #b8b2b2;
 }
 
 .container {
@@ -48,6 +49,7 @@
   color: #E2CE14;
 }
 .container .dotDot {
+  vertical-align: middle;
   color: white;
 }
 .container .clearAll {

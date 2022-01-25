@@ -16,10 +16,11 @@
 // const buttonDivide = document.querySelector(".devide");
 // const buttonPercentage = document.querySelector(".percentage");
 // const buttonBrackets = document.querySelector(".brackets");
-const buttonClear = document.querySelector(".clearAll");
+
 // const buttonPlusMinus = document.querySelector(".plusMinus")
 
 const calcArr = [];
+const buttonClear = document.querySelector(".clearAll");
 const head = document.querySelector(".head");
 let equals = document.querySelector(".equals");
 let number = document.querySelectorAll(".num");
