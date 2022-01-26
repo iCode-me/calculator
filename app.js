@@ -1,106 +1,60 @@
 
-// const buttonZero = document.querySelector(".zeroZero");
-// const buttonOne = document.querySelector(".one");
-// const buttonTwo = document.querySelector(".two");
-// const buttonThree = document.querySelector(".three");
-// const buttonFour = document.querySelector(".four");
-// const buttonFive = document.querySelector(".five");
-// const buttonSix = document.querySelector(".six");
-// const buttonSeven = document.querySelector(".seven");
-// const buttonEight= document.querySelector(".eight");
-// const buttonNine = document.querySelector(".nine");
 // const buttonDot = document.querySelector(".dotDot");
 // const buttonPlus = document.querySelector(".plus");
 // const buttonMinus = document.querySelector(".minus");
 // const buttonMultiply = document.querySelector(".multiplyy");
-// const buttonDivide = document.querySelector(".devide");
+// const buttonDivide = document.querySelector(".divide");
 // const buttonPercentage = document.querySelector(".percentage");
 // const buttonBrackets = document.querySelector(".brackets");
-
 // const buttonPlusMinus = document.querySelector(".plusMinus")
+// const calcArr = [];
 
-const calcArr = [];
 const buttonClear = document.querySelector(".clearAll");
-const head = document.querySelector(".head");
+const display = document.querySelector(".display");
 let equals = document.querySelector(".equals");
 let number = document.querySelectorAll(".num");
 let operator = document.querySelectorAll(".operator");
+let firstNumber;
+let secondNumber;
+let symbol;
+let result;
 
-let firstNum;
-let secondNum;
-
-let newNumber = number.forEach(item => {
+number.forEach(item => {
   item.addEventListener("click", event => {
-    head.innerHTML += item.innerHTML; 
+    display.innerHTML += item.innerHTML; 
   })
 })
 
 operator.forEach(item => {
-  firstNum = head.innerHTML
   item.addEventListener("click", event => {
-    head.innerHTML += item.innerHTML;
+    firstNumber = display.innerHTML;
+    display.innerHTML="";
+    symbol = item.innerHTML;
   })
 })
 
 equals.addEventListener("click", event => {
-  secondNum = head.innerHTML
-  if (operator == "+") { 
-    let result = number(firstNum) + number(secondNum);
-    head.innerHTML = "";
-    head.innerHTML = result;
+  secondNumber = display.innerHTML;
+  
+  if (symbol === "+") {
+    result = Number(firstNumber) + Number(secondNumber);
+    display.innerHTML = result;
+  } else if (symbol === "−") {
+    result = Number(firstNumber) - Number(secondNumber);
+    display.innerHTML = result;
+  } else if (symbol === "×") {
+    result = Number(firstNumber) * Number(secondNumber);
+    display.innerHTML = result;
+  } else if (symbol === "÷") {
+    result = Number(firstNumber) / Number(secondNumber);
+    display.innerHTML = result;
   } 
 })
 
+buttonClear.addEventListener("click", (event) => {
+  display.innerHTML = "";
+})
 
-
-
-
-
-
-
-
-
-
-// buttonZero.addEventListener("click", (event) => {
-//   head.innerHTML += (0)
-//   calcArr.push(0)
-// })
-
-// buttonOne.addEventListener("click", (event) => {
-//   head.innerHTML += (1)
-// })
-
-// buttonTwo.addEventListener("click", (event) => {
-//   head.innerHTML += (2)
-// })
-
-// buttonThree.addEventListener("click", (event) => {
-//   head.innerHTML += (3)
-// })
-
-// buttonFour.addEventListener("click", (event) => {
-//   head.innerHTML += (4)
-// })
-
-// buttonFive.addEventListener("click", (event) => {
-//   head.innerHTML += (5)
-// })
-
-// buttonSix.addEventListener("click", (event) => {
-//   head.innerHTML += (6)
-// })
-
-// buttonSeven.addEventListener("click", (event) => {
-//   head.innerHTML += (7)
-// })
-
-// buttonEight.addEventListener("click", (event) => {
-//   head.innerHTML += (8)
-// })
-
-// buttonNine.addEventListener("click", (event) => {
-//   head.innerHTML += (9)
-// })
 
 // buttonDot.addEventListener("click", (event) => {
 //   head.innerHTML += (".")
@@ -113,9 +67,7 @@ equals.addEventListener("click", event => {
 // buttonPlus.addEventListener("click", (event) => {
 //   head.innerHTML = "";
 // })
-buttonClear.addEventListener("click", (event) => {
-  head.innerHTML = "";
-})
+
 
 
 
