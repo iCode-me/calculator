@@ -1,14 +1,10 @@
 "use strict";
 
-// const buttonDot = document.querySelector(".dotDot");
-// const buttonPlus = document.querySelector(".plus");
-// const buttonMinus = document.querySelector(".minus");
-// const buttonMultiply = document.querySelector(".multiplyy");
-// const buttonDivide = document.querySelector(".divide");
 // const buttonPercentage = document.querySelector(".percentage");
 // const buttonBrackets = document.querySelector(".brackets");
 // const buttonPlusMinus = document.querySelector(".plusMinus")
 // const calcArr = [];
+var buttonDot = document.querySelector(".dotDot");
 var buttonClear = document.querySelector(".clearAll");
 var display = document.querySelector(".display");
 var equals = document.querySelector(".equals");
@@ -26,7 +22,6 @@ number.forEach(function (item) {
 operator.forEach(function (item) {
   item.addEventListener("click", function (event) {
     firstNumber = display.innerHTML;
-    console.log(firstNumber);
     display.innerHTML = "";
     symbol = item.innerHTML;
     console.log(symbol);
@@ -34,7 +29,6 @@ operator.forEach(function (item) {
 });
 equals.addEventListener("click", function (event) {
   secondNumber = display.innerHTML;
-  console.log(secondNumber);
 
   if (symbol === "+") {
     result = Number(firstNumber) + Number(secondNumber);
@@ -52,10 +46,10 @@ equals.addEventListener("click", function (event) {
 });
 buttonClear.addEventListener("click", function (event) {
   display.innerHTML = "";
-}); // buttonDot.addEventListener("click", (event) => {
-//   head.innerHTML += (".")
-// })
-// buttonEquals.addEventListener("click", (event) => {
+});
+buttonDot.addEventListener("click", function (event) {
+  display.innerHTML += ".";
+}); // buttonEquals.addEventListener("click", (event) => {
 //   head.innerHTML = "";
 // })
 // buttonPlus.addEventListener("click", (event) => {
