@@ -3,8 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
-  background-color: #b8b2b2;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f7f030, #f5be07);
 }
 
 .container {
