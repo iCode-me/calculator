@@ -17,7 +17,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0;
   grid-auto-flow: row;
-  grid-template-areas: "display display display display" "clearAll brackets percentage divide" "seven eight nine multiplyy" "four five six minus" "one two three plus" "plusMinus zeroZero dotDot equals";
+  grid-template-areas: "display display display display" "clearAll clearAll clearAll divide" "seven eight nine multiplyy" "four five six minus" "one two three plus" "dotDot zeroZero equals equals";
 }
 .container .display {
   width: 100%;
@@ -46,7 +46,7 @@
 }
 .container .button:hover {
   background-color: #4d4d4d;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .container .num {
   color: white;
@@ -55,27 +55,21 @@
   color: #E2CE14;
 }
 .container .dotDot {
-  vertical-align: middle;
   color: white;
 }
 .container .clearAll {
   color: #de4200;
+  width: 200px;
+  background-color: #E2CE14;
 }
 .container .equals {
   background-color: #E2CE14;
   color: white;
+  width: 125px;
 }
 
 .display {
   grid-area: display;
-}
-
-.brackets {
-  grid-area: brackets;
-}
-
-.percentage {
-  grid-area: percentage;
 }
 
 .divide {
@@ -118,15 +112,11 @@
   grid-area: three;
 }
 
-.plusMinus {
-  grid-area: plusMinus;
-}
-
-.zero {
+.zeroZero {
   grid-area: zeroZero;
 }
 
-.dot {
+.dotDot {
   grid-area: dotDot;
 }
 
@@ -146,6 +136,6 @@
   grid-area: multiplyy;
 }
 
-.clear {
+.clearAll {
   grid-area: clearAll;
 }

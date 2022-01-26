@@ -28,14 +28,16 @@ number.forEach(item => {
 operator.forEach(item => {
   item.addEventListener("click", event => {
     firstNumber = display.innerHTML;
+    console.log(firstNumber);
     display.innerHTML="";
     symbol = item.innerHTML;
+    console.log(symbol);
   })
 })
 
 equals.addEventListener("click", event => {
   secondNumber = display.innerHTML;
-  
+  console.log(secondNumber);
   if (symbol === "+") {
     result = Number(firstNumber) + Number(secondNumber);
     display.innerHTML = result;

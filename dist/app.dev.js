@@ -26,12 +26,15 @@ number.forEach(function (item) {
 operator.forEach(function (item) {
   item.addEventListener("click", function (event) {
     firstNumber = display.innerHTML;
+    console.log(firstNumber);
     display.innerHTML = "";
     symbol = item.innerHTML;
+    console.log(symbol);
   });
 });
 equals.addEventListener("click", function (event) {
   secondNumber = display.innerHTML;
+  console.log(secondNumber);
 
   if (symbol === "+") {
     result = Number(firstNumber) + Number(secondNumber);
