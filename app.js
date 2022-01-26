@@ -29,7 +29,7 @@ let operator = document.querySelectorAll(".operator");
 let firstNum;
 let secondNum;
 
-number.forEach(item => {
+let newNumber = number.forEach(item => {
   item.addEventListener("click", event => {
     head.innerHTML += item.innerHTML; 
   })

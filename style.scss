@@ -7,7 +7,7 @@
 }
 
 .container {
-  margin: 0 auto;
+  margin: 10vh auto 0 auto;
   background-color: black;
   width: 300px;
   height: 500px;
@@ -49,6 +49,7 @@
     font-size: 25px;
     justify-self: center;
     vertical-align: middle;
+    cursor: pointer;
   }
 
   .num {

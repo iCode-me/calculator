@@ -26,7 +26,7 @@ var number = document.querySelectorAll(".num");
 var operator = document.querySelectorAll(".operator");
 var firstNum;
 var secondNum;
-number.forEach(function (item) {
+var newNumber = number.forEach(function (item) {
   item.addEventListener("click", function (event) {
     head.innerHTML += item.innerHTML;
   });
