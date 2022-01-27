@@ -1,13 +1,8 @@
 
-// const buttonPercentage = document.querySelector(".percentage");
-// const buttonBrackets = document.querySelector(".brackets");
-// const buttonPlusMinus = document.querySelector(".plusMinus")
-// const calcArr = [];
-
 const buttonDot = document.querySelector(".dotDot");
 const buttonClear = document.querySelector(".clearAll");
 const display = document.querySelector(".display");
-let equals = document.querySelector(".equals");
+const equals = document.querySelector(".equals");
 let number = document.querySelectorAll(".num");
 let operator = document.querySelectorAll(".operator");
 let firstNumber;
@@ -57,6 +52,21 @@ buttonDot.addEventListener("click", (event) => {
   display.innerHTML += (".");
 })
 
+
+
+
+
+
+
+
+
+
+
+
+// const buttonPercentage = document.querySelector(".percentage");
+// const buttonBrackets = document.querySelector(".brackets");
+// const buttonPlusMinus = document.querySelector(".plusMinus")
+// const calcArr = [];
 // buttonEquals.addEventListener("click", (event) => {
 //   head.innerHTML = "";
 // })

@@ -1,9 +1,5 @@
 "use strict";
 
-// const buttonPercentage = document.querySelector(".percentage");
-// const buttonBrackets = document.querySelector(".brackets");
-// const buttonPlusMinus = document.querySelector(".plusMinus")
-// const calcArr = [];
 var buttonDot = document.querySelector(".dotDot");
 var buttonClear = document.querySelector(".clearAll");
 var display = document.querySelector(".display");
@@ -49,7 +45,11 @@ buttonClear.addEventListener("click", function (event) {
 });
 buttonDot.addEventListener("click", function (event) {
   display.innerHTML += ".";
-}); // buttonEquals.addEventListener("click", (event) => {
+}); // const buttonPercentage = document.querySelector(".percentage");
+// const buttonBrackets = document.querySelector(".brackets");
+// const buttonPlusMinus = document.querySelector(".plusMinus")
+// const calcArr = [];
+// buttonEquals.addEventListener("click", (event) => {
 //   head.innerHTML = "";
 // })
 // buttonPlus.addEventListener("click", (event) => {
