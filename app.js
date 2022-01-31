@@ -1,5 +1,4 @@
 // New variables created to store the classes
-const buttonDot = document.querySelector(".dotDot");
 const buttonClear = document.querySelector(".clearAll");
 const display = document.querySelector(".display");
 const equals = document.querySelector(".equals");
@@ -52,33 +51,6 @@ equals.addEventListener("click", event => {
 buttonClear.addEventListener("click", (event) => {
   display.innerHTML = "";
 })
-
-buttonDot.addEventListener("click", (event) => {
-  display.innerHTML += (".");
-})
-
-
-
-
-
-
-
-
-
-
-
-
-// const buttonPercentage = document.querySelector(".percentage");
-// const buttonBrackets = document.querySelector(".brackets");
-// const buttonPlusMinus = document.querySelector(".plusMinus")
-// const calcArr = [];
-// buttonEquals.addEventListener("click", (event) => {
-//   head.innerHTML = "";
-// })
-
-// buttonPlus.addEventListener("click", (event) => {
-//   head.innerHTML = "";
-// })
 
 
 

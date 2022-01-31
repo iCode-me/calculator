@@ -1,7 +1,6 @@
 "use strict";
 
 // New variables created to store the classes
-var buttonDot = document.querySelector(".dotDot");
 var buttonClear = document.querySelector(".clearAll");
 var display = document.querySelector(".display");
 var equals = document.querySelector(".equals");
@@ -49,15 +48,3 @@ equals.addEventListener("click", function (event) {
 buttonClear.addEventListener("click", function (event) {
   display.innerHTML = "";
 });
-buttonDot.addEventListener("click", function (event) {
-  display.innerHTML += ".";
-}); // const buttonPercentage = document.querySelector(".percentage");
-// const buttonBrackets = document.querySelector(".brackets");
-// const buttonPlusMinus = document.querySelector(".plusMinus")
-// const calcArr = [];
-// buttonEquals.addEventListener("click", (event) => {
-//   head.innerHTML = "";
-// })
-// buttonPlus.addEventListener("click", (event) => {
-//   head.innerHTML = "";
-// })
